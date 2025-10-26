@@ -2,6 +2,35 @@
 
 A modern Android application built with Jetpack Compose for tracking attendance using QR codes. Perfect for hackathons, classrooms, events, and meetings.
 
+## Original Concept (Make-a-thon 2025)
+
+[ Attendance Tracking ]
+Checks: Wifi, GPS
+Database (Store Classroom Coords) ----- Check proximity of location (< 5 metre)
+
+[ MySQL Table ]
+Column 1 - Classroom Coords
+Column 2 - Student id
+Column 3 - Student name
+Column 4 - Section
+Column 5 - Date-wise attendance
+
+Wifi MAC address Verification ---- Verify the MAC address of our college router
+
+1st stage - Wifi Verification [ For presentators ]
+2nd stage - GPS verification [ For presentators ]
+
+Login System - Student Email/Password
+
+[ For Teachers ]
+
+Total no. Of absentees, presentees
+--> Teachers in their respective classes
+
+Column list of all students present/absentees
+
+Option to download Attendance Sheet as an Excel File (Daily/Monthly)
+
 ## Features
 
 ### 🔐 Authentication
@@ -53,14 +82,14 @@ The app comes with pre-configured demo accounts:
 ### Prerequisites
 - Android Studio Arctic Fox or later
 - Android SDK 24+ (Android 7.0)
-- Kotlin 1.9.10+
+- Kotlin 1.9.22+
 
 ### Installation
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd attendance-tracker
+   git clone https://github.com/HarishBalajiR/Attendance_Tracker.git
+   cd Attendance_Tracker
    ```
 
 2. **Open in Android Studio**
@@ -216,6 +245,9 @@ app/
 - [ ] Multi-language support
 - [ ] Offline mode improvements
 - [ ] Real-time collaboration
+- [ ] WiFi MAC address verification
+- [ ] GPS location-based attendance
+- [ ] Excel export functionality
 
 ## Contributing
 
@@ -239,6 +271,3 @@ For support and questions:
 ---
 
 **Built with ❤️ for the hackathon community**
-
-
-
